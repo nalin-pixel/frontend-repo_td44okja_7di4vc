@@ -4,9 +4,9 @@ export default function CTA() {
   return (
     <section id="contact" className="relative py-24 sm:py-32">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-        <div className="relative overflow-hidden rounded-3xl border border-white/15 bg-white/5 backdrop-blur p-8 sm:p-12 text-center text-white">
-          <div className="absolute -top-24 -left-24 h-72 w-72 bg-rose-500/20 blur-3xl rounded-full" />
-          <div className="absolute -bottom-24 -right-24 h-72 w-72 bg-red-500/20 blur-3xl rounded-full" />
+        <div className="relative overflow-hidden rounded-3xl border border-amber-200/15 bg-emerald-900/30 backdrop-blur p-8 sm:p-12 text-center text-amber-50">
+          <div className="absolute -top-24 -left-24 h-72 w-72 bg-amber-300/20 blur-3xl rounded-full" />
+          <div className="absolute -bottom-24 -right-24 h-72 w-72 bg-emerald-400/20 blur-3xl rounded-full" />
 
           <motion.h3
             initial={{ opacity: 0, y: 10 }}
@@ -14,18 +14,18 @@ export default function CTA() {
             viewport={{ once: true }}
             className="text-3xl sm:text-4xl font-extrabold"
           >
-            Ready to plan your Christmas celebration?
+            Enquire for Christmas bookings
           </motion.h3>
-          <p className="mt-4 text-white/80 max-w-2xl mx-auto">
-            Share your date, group size and vision — our planners will craft the perfect festive experience.
+          <p className="mt-4 text-amber-100/80 max-w-2xl mx-auto">
+            Tell us your preferred date, group size and any special touches you have in mind.
           </p>
 
           <form className="mt-8 grid sm:grid-cols-3 gap-3">
-            <input className="w-full rounded-xl bg-white/10 border border-white/20 px-4 py-3 placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-rose-400/50" placeholder="Your name" />
-            <input className="w-full rounded-xl bg-white/10 border border-white/20 px-4 py-3 placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-rose-400/50" placeholder="Email" />
-            <input className="w-full rounded-xl bg-white/10 border border-white/20 px-4 py-3 placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-rose-400/50" placeholder="Party size" />
-            <textarea className="sm:col-span-3 w-full h-28 rounded-xl bg-white/10 border border-white/20 px-4 py-3 placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-rose-400/50" placeholder="Tell us about your event" />
-            <button className="sm:col-span-3 mt-2 inline-flex justify-center px-6 py-3 rounded-xl bg-gradient-to-r from-red-500 to-rose-500 font-semibold shadow-lg shadow-rose-500/20 hover:shadow-rose-500/30 transition">Enquire Now</button>
+            <input aria-label="Name" className="w-full rounded-xl bg-emerald-950/40 border border-amber-200/20 px-4 py-3 placeholder-amber-100/60 focus:outline-none focus:ring-2 focus:ring-amber-300/40" placeholder="Your name" />
+            <input aria-label="Email" className="w-full rounded-xl bg-emerald-950/40 border border-amber-200/20 px-4 py-3 placeholder-amber-100/60 focus:outline-none focus:ring-2 focus:ring-amber-300/40" placeholder="Email" />
+            <input aria-label="Party size" className="w-full rounded-xl bg-emerald-950/40 border border-amber-200/20 px-4 py-3 placeholder-amber-100/60 focus:outline-none focus:ring-2 focus:ring-amber-300/40" placeholder="Party size" />
+            <textarea aria-label="Message" className="sm:col-span-3 w-full h-28 rounded-xl bg-emerald-950/40 border border-amber-200/20 px-4 py-3 placeholder-amber-100/60 focus:outline-none focus:ring-2 focus:ring-amber-300/40" placeholder="Tell us about your event" />
+            <button className="sm:col-span-3 mt-2 inline-flex justify-center px-6 py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 font-semibold text-amber-50 shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/30 transition">Send enquiry</button>
           </form>
         </div>
       </div>
